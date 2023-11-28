@@ -1,0 +1,18 @@
+201014A pl_bpl 
+
+[[Fit Statistics]]
+    # fitting method   = emcee
+    # function evals   = 500000
+    # data points      = 22
+    # variables        = 6
+    chi-square         = 67.0158865
+    reduced chi-square = 4.18849291
+    Akaike info crit   = 36.5055195
+    Bayesian info crit = 43.0517742
+[[Variables]]
+    F_p:      -6.71330863 +/- 0.15277825 (2.28%) (init = -4.626885)
+    alpha_p:   0.00115687 +/- 0.08778972 (7588.53%) (init = 1.332808)
+    alpha_a1:  5.69821681 +/- 0.41925184 (7.36%) (init = 5.087601)
+    alpha_a2:  0.69385585 +/- 0.02704811 (3.90%) (init = 0.6803875)
+    t0:        2.40916251 +/- 0.01427987 (0.59%) (init = 2.448094)
+    t1:        1.75398857 +/- 0.03371097 (1.92%) (init = 1.750668)

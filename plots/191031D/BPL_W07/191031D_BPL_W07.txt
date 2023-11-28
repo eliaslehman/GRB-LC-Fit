@@ -1,0 +1,20 @@
+191031D BPL_W07 
+
+[[Fit Statistics]]
+    # fitting method   = emcee
+    # function evals   = 5000
+    # data points      = 33
+    # variables        = 7
+    chi-square         = 18.6572522
+    reduced chi-square = 0.71758662
+    Akaike info crit   = -4.81899692
+    Bayesian info crit = 5.65655601
+[[Variables]]
+    F_bpl:   -7.09758500 +/- 0.05107208 (0.72%) (init = -7.103203)
+    T_bpl:   -1.6 (fixed)
+    alpha_1:  0.53170287 +/- 0.01249557 (2.35%) (init = 0.5311732)
+    alpha_2:  2.27992149 +/- 0.04262598 (1.87%) (init = 2.288061)
+    F_a:     -9.63606913 +/- 0.11503072 (1.19%) (init = -9.6344)
+    T_a:     -2.19872266 +/- 0.03825065 (1.74%) (init = -2.205548)
+    alpha_a:  1.90294890 +/- 0.05586376 (2.94%) (init = 1.892473)
+    t_a:      2.32204224 +/- 0.06348750 (2.73%) (init = 2.320268)

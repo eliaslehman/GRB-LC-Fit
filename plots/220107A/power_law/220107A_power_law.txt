@@ -1,0 +1,14 @@
+220107A power_law 
+
+[[Fit Statistics]]
+    # fitting method   = emcee
+    # function evals   = 50000
+    # data points      = 97
+    # variables        = 2
+    chi-square         = 109.017102
+    reduced chi-square = 1.14754844
+    Akaike info crit   = 15.3289978
+    Bayesian info crit = 20.4784197
+[[Variables]]
+    F:     -3.67534916 +/- 0.13394621 (3.64%) (init = -3.67525)
+    alpha:  1.50991895 +/- 0.02850792 (1.89%) (init = 1.50993)

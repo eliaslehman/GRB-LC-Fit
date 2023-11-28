@@ -1,0 +1,20 @@
+220117A DOUBLE WILLINGALE 
+
+[[Fit Statistics]]
+    # fitting method   = emcee
+    # function evals   = 50000
+    # data points      = 220
+    # variables        = 7
+    chi-square         = 2196.59912
+    reduced chi-square = 10.3126719
+    Akaike info crit   = 520.228370
+    Bayesian info crit = 543.983762
+[[Variables]]
+    F_p0:    -7.77604270 +/- 0.43378568 (5.58%) (init = -8.597995)
+    alpha_0:  4.14737838 +/- 0.07585365 (1.83%) (init = 4.157143)
+    T0:       2.09790903 +/- 0.10714316 (5.11%) (init = 2.296196)
+    t0:       2.07898925 +/- 0.01403092 (0.67%) (init = 2.080889)
+    F_p1:    -10.7407635 +/- 0.01659539 (0.15%) (init = -10.72778)
+    alpha_1:  1.73985751 +/- 0.04961442 (2.85%) (init = 1.783016)
+    T1:       3.8 (fixed)
+    t1:       2.12668666 +/- 0.10053190 (4.73%) (init = 2.297889)

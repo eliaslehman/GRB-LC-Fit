@@ -1,0 +1,18 @@
+210517A PL_W07 
+
+[[Fit Statistics]]
+    # fitting method   = emcee
+    # function evals   = 500000
+    # data points      = 22
+    # variables        = 5
+    chi-square         = 295.848958
+    reduced chi-square = 17.4028799
+    Akaike info crit   = 67.1737451
+    Bayesian info crit = 72.6289573
+[[Variables]]
+    F_p:     -8.00003794 +/- 0.00825556 (0.10%) (init = -8)
+    alpha_p:  1.06973490 +/- 0.01822288 (1.70%) (init = 1.07196)
+    T_a:      3.05765100 +/- 0.32132806 (10.51%) (init = 3.072669)
+    F_a:     -10.8415194 +/- 0.25872455 (2.39%) (init = -10.8542)
+    alpha_a:  1.21043545 +/- 0.08060357 (6.66%) (init = 1.205612)
+    tt:       2.6 (fixed)

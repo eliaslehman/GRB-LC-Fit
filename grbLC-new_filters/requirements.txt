@@ -1,0 +1,17 @@
+requests
+matplotlib
+numpy
+astroquery
+scipy
+pandas
+glob2
+astropy
+plotly
+ipython
+PyPDF2
+numdifftools
+lmfit
+ads
+emcee
+corner
+progressbar2
