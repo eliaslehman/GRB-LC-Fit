@@ -1,0 +1,16 @@
+221009A willingale 
+
+[[Fit Statistics]]
+    # fitting method   = emcee
+    # function evals   = 50000
+    # data points      = 1603
+    # variables        = 3
+    chi-square         = 2536.02267
+    reduced chi-square = 1.58501417
+    Akaike info crit   = 741.328323
+    Bayesian info crit = 757.467219
+[[Variables]]
+    T:      3.80004317 +/- 0.00569046 (0.15%) (init = 3.800099)
+    F:     -7.64473748 +/- 0.00676071 (0.09%) (init = -7.644806)
+    alpha:  1.58775309 +/- 0.00273308 (0.17%) (init = 1.5877)
+    t:      0 (fixed)

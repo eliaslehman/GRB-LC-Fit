@@ -2,19 +2,19 @@
 
 [[Fit Statistics]]
     # fitting method   = emcee
-    # function evals   = 50000
+    # function evals   = 5000
     # data points      = 124
-    # variables        = 7
-    chi-square         = 354.262130
-    reduced chi-square = 3.02788145
-    Akaike info crit   = 144.169689
-    Bayesian info crit = 163.911660
+    # variables        = 4
+    chi-square         = 2488.97548
+    reduced chi-square = 20.7414623
+    Akaike info crit   = 379.918766
+    Bayesian info crit = 391.199892
 [[Variables]]
-    F_p0:    -7.36372300 +/- 0.22615868 (3.07%) (init = -5.574104)
-    alpha_0:  0.31524765 +/- 0.05860469 (18.59%) (init = 0.4351279)
-    T0:       1.25171212 +/- 0.26142605 (20.89%) (init = 0.7151716)
-    t0:      -1.677782 (fixed)
-    F_p1:    -9.19602048 +/- 0.17935728 (1.95%) (init = -7.401175)
-    alpha_1:  3.64824499 +/- 0.26822505 (7.35%) (init = 2.472352)
-    T1:       2.31473960 +/- 0.05441849 (2.35%) (init = 1.563959)
-    t1:      -0.15170453 +/- 0.59438853 (391.81%) (init = -1.237758)
+    F_p0:    -7.92452417 +/- 0.02488938 (0.31%) (init = -7.925188)
+    alpha_0:  0.45400470 +/- 0.00711256 (1.57%) (init = 0.4535461)
+    T0:       1 (fixed)
+    t0:      -1.48532155 +/- 0.01882666 (1.27%) (init = -1.48575)
+    F_p1:    -10.2417891 +/- 0.00926450 (0.09%) (init = -10.24248)
+    alpha_1:  6.7 (fixed)
+    T1:       2.5 (fixed)
+    t1:       1.5 (fixed)
