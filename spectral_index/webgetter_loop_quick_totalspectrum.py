@@ -23,12 +23,13 @@ import os
 from chromedriver_py import binary_path
 from selenium.webdriver.chrome.service import Service
 
-params = np.genfromtxt(r"C:\Users\elias\Desktop\BAERI\spectral_index\filtered_data_without_redshift.txt", dtype = str, usecols = (0,8,9))
+params = np.genfromtxt(r"C:\Users\elias\Desktop\BAERI\spectral_index\filtered_data_with_redshift.txt", dtype = str, usecols = (0,11,12))
 #print(params)
 index=[]
 ids = []
 #print(params)
 #Loop will start here
+print(params[0])
 
 for i in range(1,len(params)):
 
@@ -69,7 +70,7 @@ for i in range(1,len(params)):
     try:
         #element1 =  WebDriverWait(driver, 14400).until(EC.presence_of_element_located(name = "Time-slicing failed"))
         #driver.quit()
-        element = WebDriverWait(driver, 14400).until(EC.presence_of_element_located((By.XPATH, '//*[@id="holder"]/h3')))
+        element = WebDriverWait(driver, 300).until(EC.presence_of_element_located((By.XPATH, '//*[@id="holder"]/h3')))
         if ("Time-slicing  failed" in driver.page_source):
             driver.get("http://www.swift.ac.uk/xrt_spectra/")
             field = driver.find_element("name","name")
@@ -85,7 +86,7 @@ for i in range(1,len(params)):
             driver.find_element(By.CLASS_NAME,"button").click()
             print('+100')
             
-            element = WebDriverWait(driver, 14400).until(EC.presence_of_element_located((By.XPATH, "//*[@id='holder']/h3")))
+            element = WebDriverWait(driver, 300).until(EC.presence_of_element_located((By.XPATH, "//*[@id='holder']/h3")))
     
             if ("Time-slicing  failed" in driver.page_source):
                 driver.get("http://www.swift.ac.uk/xrt_spectra/")
@@ -102,7 +103,7 @@ for i in range(1,len(params)):
                 driver.find_element(By.CLASS_NAME,"button").click()
                 print('+1000')
     
-                element = WebDriverWait(driver, 14400).until(EC.presence_of_element_located((By.XPATH, "//*[@id='holder']/h3")))
+                element = WebDriverWait(driver, 300).until(EC.presence_of_element_located((By.XPATH, "//*[@id='holder']/h3")))
     
                 if ("Time-slicing  failed" in driver.page_source):
                     driver.get("http://www.swift.ac.uk/xrt_spectra/")
@@ -119,7 +120,7 @@ for i in range(1,len(params)):
                     driver.find_element(By.CLASS_NAME,"button").click()
                     print('+10000')
     
-                    element = WebDriverWait(driver, 14400).until(EC.presence_of_element_located((By.XPATH, "//*[@id='holder']/h3")))
+                    element = WebDriverWait(driver, 300).until(EC.presence_of_element_located((By.XPATH, "//*[@id='holder']/h3")))
     
                     if ("Time-slicing  failed" in driver.page_source):
                         driver.get("http://www.swift.ac.uk/xrt_spectra/")
@@ -136,7 +137,7 @@ for i in range(1,len(params)):
                         driver.find_element(By.CLASS_NAME,"button").click()
                         print('+100000')
     
-                        element = WebDriverWait(driver, 14400).until(EC.presence_of_element_located((By.XPATH, "//*[@id='holder']/h3")))
+                        element = WebDriverWait(driver, 300).until(EC.presence_of_element_located((By.XPATH, "//*[@id='holder']/h3")))
     
                         if ("Time-slicing  failed" in driver.page_source):
                             driver.get("http://www.swift.ac.uk/xrt_spectra/")
@@ -153,9 +154,9 @@ for i in range(1,len(params)):
                             driver.find_element(By.CLASS_NAME,"button").click()
                             print('+1000000')
     
-                            element = WebDriverWait(driver, 14400).until(EC.presence_of_element_located((By.XPATH, "//*[@id='holder']/h3")))
+                            element = WebDriverWait(driver, 300).until(EC.presence_of_element_located((By.XPATH, "//*[@id='holder']/h3")))
     
-        print("gothere3")    
+        print("gothere3")
         table = driver.find_element(By.XPATH,"//*[@id='holder']/div[3]/table/tbody/tr[4]/td").text
         try:
             table2 =  driver.find_element(By.XPATH,"//*[@id='holder']/div[4]/table/tbody/tr[4]/td").text
@@ -167,7 +168,7 @@ for i in range(1,len(params)):
             #Append output to array
             
             index.append(table + " " + table2)
-            ids.append(grbid)                
+            ids.append(grbid)
         except NoSuchElementException:
             print(grbid)
             print(table)
@@ -176,7 +177,7 @@ for i in range(1,len(params)):
             #Append output to array
             
             index.append(table)
-            ids.append(grbid)   
+            ids.append(grbid)
             driver.quit()
         #table1 = driver.find_element_by_xpath("//*[@id='holder']/div[4]/table/tbody/tr[4]/td").text
         
